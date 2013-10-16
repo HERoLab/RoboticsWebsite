@@ -10,9 +10,19 @@
 }
 
 a {
+ color: #a90000;
  text-decoration:none;
  border: 0px;
 }
+
+a:hover {
+ color: #ff0000;
+}
+
+a:visited {
+ color: #750000;
+}
+
 
 body {
  min-width:620px;
@@ -23,7 +33,8 @@ body {
 
  font-family: "raleway";
  background-color:white;
- background-color: #292929;
+ background-color: #292929; /* Should this be MAROON instead? */
+ /*background-color: #292929;*/
 }
 
 .darkBar{
@@ -120,8 +131,9 @@ body {
 #imageConveyor {
  height:250px;
  width:100%;
- background-color: #AAAAAA;
+ background-color: maroon;
  text-align: center;
+ position:relative;
 }
 
 #imageConveyorControl {
@@ -136,11 +148,20 @@ body {
 }
 
 .conveyorImage {
- max-height:100%;
+ height:100%;
  border-left: 1px solid black;
  border-right: 1px solid black;
  box-shadow: 0px 0px 5px 8px #0A0A0A;
  z-index:5;
+ margin: 0 auto;
+ position:absolute;
+ left:0px;
+ right:0px;
+ opacity: 0;
+}
+
+#image_1 { /* On load, show only the first image */
+ opacity: 1;
 }
 
 #conveyorButtonContainer{
@@ -166,6 +187,10 @@ body {
  cursor: pointer;
 }
 
+.activeConveyorButton {
+ background-color: #660000;
+}
+
 /* Menu Style */
 #menuTitle {
  position:absolute;
@@ -176,3 +201,40 @@ body {
  
  bottom:0px;
 }
+
+#listContainerGlobal {
+ margin:0 auto;
+ text-align:center;
+}
+
+/* Members Page Style */
+.listContainer {
+ display: inline-block;
+ vertical-align:top;
+ margin-left:50px;
+ margin-right:50px;
+ text-align:left;
+}
+
+.listContainer>ul {
+ margin:0px;
+}
+
+#membersListHeading{
+ font-size:18px;
+ font-weight: bold;
+ font-style:oblique;
+ text-align:center;
+
+}
+
+.ui-tooltip{
+ background-color: #292929;
+ color:white;
+ border:1px solid black;
+ border-radius:15px;
+ display:inline-block;
+ padding:10px;
+ z-index:1000;
+}
+

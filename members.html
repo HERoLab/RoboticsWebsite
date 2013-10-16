@@ -26,19 +26,44 @@ HC Robotics
 <div class="darkBar"></div>
 <div id="mainContainer">
 
-<div id="imageConveyor"><img class="conveyorImage" src="workspace.png" /></div>
+
+<div id="imageConveyor">
+ <img class="conveyorImage" id="image_1" src="images/conveyor_1.jpg" title="Founders!"/>
+ <img class="conveyorImage" id="image_2" src="images/conveyor_2.jpg" title="KINSC!"/>
+ <img class="conveyorImage" id="image_3" src="images/conveyor_3.jpg" title="Hilles!"/>
+</div> 
+
 <div id="imageConveyorControl">
  <div id="conveyorButtonContainer">
-  <div class="conveyorButton"></div>
-  <div class="conveyorButton"></div>
-  <div class="conveyorButton"></div>
+  <div class="conveyorButton activeConveyorButton" for="image_1" ></div>
+  <div class="conveyorButton" for="image_2" ></div>
+  <div class="conveyorButton" for="image_3" ></div>
  </div>
 </div>
 
 <div id="bodyContainer">
 <div id="bodyHeader">Members</div>
 <div id="bodyContent">
-This is where content will go!
+
+<div id="listContainerGlobal">
+
+<div class="listContainer">
+<div id="membersListHeading">Current Members</div>
+<ul>
+<li>Brandon Smith ('16)</li>
+<li><a href="https://github.com/cfalk">Casey Falk ('16)</a></li>
+<li>Blair Rush ('16)</li>
+<li>Alison Marqusee ('16)</li>
+</ul>
+</div>
+
+<div class="listContainer">
+<div id="membersListHeading">Emeriti</div>
+None yet!
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -51,5 +76,9 @@ Haverford College Robotics &copy;2013
 
 
 </body>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script type="text/javascript" src="main.js"> </script>
+
 </html>
 
