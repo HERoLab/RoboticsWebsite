@@ -1,4 +1,6 @@
 /* Font */
+
+
 @font-face {
  font-family: "raleway";
  src: url(raleway_thin.ttf) format("truetype");
@@ -208,6 +210,7 @@ body {
 
 #listContainerGlobal {
  margin:0 auto;
+ margin-bottom:40px;
  text-align:center;
 }
 
@@ -237,6 +240,7 @@ body {
  color:white;
  border:1px solid black;
  border-radius:15px;
+ position:absolute;
  display:inline-block;
  padding:10px;
  z-index:1000;
