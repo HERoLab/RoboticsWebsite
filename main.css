@@ -159,7 +159,8 @@ body {
 
 .conveyorImage {
  height:100%;
- border-left: 1px solid black;
+ max-width: 90%;
+border-left: 1px solid black;
  border-right: 1px solid black;
  box-shadow: 0px 0px 5px 8px #0A0A0A;
  z-index:5;
