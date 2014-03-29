@@ -72,6 +72,10 @@ body {
  font-family:ubuntu;
 }
 
+#bodyContent li {
+ list-style-type:none;
+}
+
 #menuContainer {
  height: 100px;
  width: 100%;
@@ -112,8 +116,8 @@ body {
  height: 100px;
  width: 100%;
  color: white;
+ margin-top:20px;
  position:relative;
-
  text-align:center;
 } 
 
@@ -255,4 +259,5 @@ body {
  height:50px;
  margin:10px;
 }
+
 
