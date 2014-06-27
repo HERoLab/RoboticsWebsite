@@ -25,6 +25,14 @@ a:visited {
  color: #750000;
 }
 
+#galleryBox img {
+ max-width:100%;
+ margin:20px auto;
+ padding:10px;
+ box-sizing:border-box;
+ background-color:rgba(0,0,0,0.1);
+ border-right:2px solid #efe;
+}
 
 body {
  min-width:620px;
@@ -58,9 +66,10 @@ body {
  font-size:20px;
  background-color: #D4D4D4;
  display: inline-block;
- 
+
  padding-left:25px;
  padding-right:35px;
+ padding-top:10px;
  border-bottom-right-radius:25px;
  height:30px;
 }
@@ -119,7 +128,7 @@ body {
  margin-top:20px;
  position:relative;
  text-align:center;
-} 
+}
 
 #HaverLogo {
  position:absolute;
@@ -128,7 +137,7 @@ body {
  margin:10px;
  width:130px;
  height:30px;
- 
+
  right:0px;
  top:0px;
 }
@@ -186,8 +195,7 @@ border-left: 1px solid black;
  width:10px;
  margin: 10px;
  display: inline-block;
- 
- box-shadow: 0px 0px 5px #0A0A0A;
+
  background-color: #292929;
  border-radius:50px;
  border: 1px solid black;
@@ -207,9 +215,9 @@ border-left: 1px solid black;
  position:absolute;
  display: inline-block;
  margin-left: 15px;
- 
+
  font-size: 24px;
- 
+
  bottom:0px;
 }
 
@@ -261,4 +269,8 @@ border-left: 1px solid black;
  margin:10px;
 }
 
+#galleryBox {
+ text-align:center;
+
+}
 
